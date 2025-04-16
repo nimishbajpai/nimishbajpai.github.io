@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Nimish Bajpai"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : # "Nimish Bajpai"
+description              : "Select projects across credit risk and data science"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -113,15 +113,16 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  name             : #"Nimish Bajpai"
+  avatar           :  "/assets/images/image01.jpg"
+  bio              : "Blending credit risk, data science, and finance — I bring 7+ years of experience leading forecasting and strategy in high-growth lending environments. Currently Finance Manager at India’s largest fintech, where I build credit risk models grounded in real-world loan behavior. 
+                      Ranked 1st in my undergrad cohort at IIT (BHU) and hold an MBA from XLRI Jamshedpur. "
+  location         : "Bengaluru, India"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:b.nimish9@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,7 +134,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/nimishbajpai"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -224,7 +225,13 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  defaults:
+  -
+    scope:
+      path: ""
+    values:
+      custom_css:
+        - "custom.css"
 
 # Outputting
 permalink: /:categories/:title/
