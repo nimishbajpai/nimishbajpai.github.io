@@ -110,9 +110,6 @@ analytics:
     tracking_id          :
     anonymize_ip         : # true, false (default)
 
-head_scripts:
-  - _includes/head-custom.html
-  
 # Site Author
 author:
   name             : #"Nimish Bajpai"
