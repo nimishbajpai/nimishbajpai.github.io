@@ -1,80 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nimish Bajpai | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #0e1117;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #0056b3;
-    }
-    a {
-      color: #0056b3;
-      text-decoration: none;
-    }
-    .project {
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Nimish Bajpai</h1>
-    <p>Credit Risk Analyst | Data Scientist | Python Enthusiast</p>
-  </header>
+---
+layout: home
+author_profile: true
+title: null
+excerpt: null
+paginate: false
+entries_layout: list
+---
 
-  <section>
-    <h2>About Me</h2>
-    <p>I specialize in credit risk modeling, data analysis, and logistic regression. I enjoy solving real-world problems using structured data and interpretable models.</p>
-  </section>
+<!-- Custom Project Section -->
+<div class="home-projects" style="margin-top: 2rem;">
+  <h2>Selected projects in credit risk and data science</h2>
+  <hr>
 
-  <section>
-    <h2>Featured Project</h2>
-    <div class="project">
-      <h3>🏦 Lifetime PD Model using Logistic Regression</h3>
-      <p>Developed a credit risk PD model using Fannie Mae data (2004–2010). Completed data cleaning, WOE transformation, IV analysis, logistic regression modeling, and evaluation with ROC, confusion matrix, and calibration curve.</p>
-      <ul>
-        <li><a href="https://github.com/nimishbajpai/lifetime-pd-model" target="_blank">View GitHub Repository</a></li>
-        <li><a href="images/roc_curve.png" target="_blank">View ROC Curve</a></li>
-        <li><a href="images/calibration_curve.png" target="_blank">View Calibration Plot</a></li>
-      </ul>
-    </div>
-  </section>
+  <h3>🏦 Lifetime PD Model Using Fannie Mae Data</h3>
+  <p>
+    Built a logistic regression model to estimate the probability that a loan will go 90+ days delinquent using Fannie Mae loan performance data (2004–2010).
+    <br>
+    Included data wrangling, WOE encoding, feature selection, model evaluation (AUC, KS), and visualizations.
+  </p>
+ 
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:b.nimish9@gmail.com">nimish@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/nimishbajpai" target="_blank">linkedin.com/in/nimishbajpai</a></p>
-  </section>
 
-  <footer>
-    &copy; 2025 Nimish Bajpai | Hosted on GitHub Pages
-  </footer>
-</body>
-</html>
+  <!--p style="margin-top: 1rem; font-size: 0.9rem; font-weight: 500;">Model evaluation visualizations:</p-->
+
+  <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 0.5rem;">
+    <img src="/assets/images/calibration.jpg" alt="Calibration Curve" style="width: 48%; border: 1px solid #ccc; border-radius: 6px;" />
+    <img src="/assets/images/roc.jpg" alt="ROC Curve" style="width: 48%; border: 1px solid #ccc; border-radius: 6px;" />
+  </div>
+  <p>
+    <!--strong>Skills:</strong>
+    <span class="skill-badge badge-python">Python</span>
+    <span class="skill-badge badge-pandas">Pandas</span>
+    <span class="skill-badge badge-sklearn">scikit-learn</span>
+    <span class="skill-badge badge-jupyter">Jupyter</span-->
+    <!--strong>Skills:</strong-->
+    <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" alt="Python" />
+    <img src="https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white" alt="Pandas" />
+    <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
+    <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white" alt="Jupyter">
+  </p>
+
+  <p>
+    <a href="/pd-summary/" style="text-decoration: none; color: #00558e;">View full project</a> |
+    <a href="https://github.com/nimishbajpai/nimishbajpai.github.io/blob/master/projects/fannie-mae-lifetime-pd/fmae_final.ipynb" style="text-decoration: none; color: #007acc;" target="_blank">GitHub</a>
+
+  </p>
+  
+
+
+  <hr>
+
+
+  
+
+
+</div>
+>>>>>>> origin/master
